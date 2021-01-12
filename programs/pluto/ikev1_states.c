@@ -33,7 +33,7 @@ struct finite_state v1_states[] = {
 #define S(KIND, STORY, CAT) [KIND - STATE_IKEv1_FLOOR] = {	\
 		.kind = KIND,					\
 		.name = #KIND,					\
-		.short_name = #KIND + 6/*STATE_*/,		\
+		.short_name = &#KIND[6]/*STATE_*/,		\
 		.story = STORY,					\
 		.category = CAT,				\
 	}

@@ -41,7 +41,7 @@ struct finite_state v2_states[] = {
 #define S(KIND, STORY, CAT) [KIND - STATE_IKEv2_FLOOR] = {	\
 		.kind = KIND,					\
 		.name = #KIND,					\
-		.short_name = #KIND + 6/*STATE_*/,		\
+		.short_name = &#KIND[6]/*STATE_*/,		\
 		.story = STORY,					\
 		.category = CAT,				\
 	}
@@ -49,7 +49,7 @@ struct finite_state v2_states[] = {
 #define V2(KIND, STORY, CAT) [KIND - STATE_IKEv2_FLOOR] = {	\
 		.kind = KIND,					\
 		.name = #KIND,					\
-		.short_name = #KIND + 9/*STATE_V2_*/,		\
+		.short_name = &#KIND[9]/*STATE_V2_*/,		\
 		.story = STORY,					\
 		.category = CAT,				\
 	}
